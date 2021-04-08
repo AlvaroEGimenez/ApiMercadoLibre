@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Meli</string>
+    <string name="buscar">Buscar</string>
+    <string name="sin_resultados_para_la_busqueda">Sin resultados para la busqueda</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="productnew">Nuevo</string>
+    <string name="used">Usado</string>
+    <string name="nunca_dejes_de_buscar">Nunca dejes de buscar</string>
+</resources>
