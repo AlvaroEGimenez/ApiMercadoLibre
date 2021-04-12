@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.meli.challenge.R
 import com.meli.challenge.adapters.SearchAdapter
 import com.meli.challenge.databinding.FragmentSearchBinding
+import com.meli.challenge.databinding.NetworkErrorBinding
 import com.meli.challenge.utils.Resource
 import com.meli.challenge.utils.autoCleared
 import com.meli.challenge.utils.invisible
@@ -60,13 +61,15 @@ class SearchFragment : Fragment() {
 
                 Resource.Status.ERROR -> {
                     binding.progressBar.invisible()
-                    Toast.makeText(context, it.message, Toast.LENGTH_LONG).show()
+                    binding.errorLayout.constraintError.visible()
+                    binding.errorLayout.btnBack.setOnClickListener {
+                        activity?.onBackPressed()
+                    }
                     Log.e("Search Fragment",it.message.toString())
                 }
             }
         })
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
