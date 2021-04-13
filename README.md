@@ -2,10 +2,11 @@
 
 APP mobile android desarollada en el marco de un desafio tecnico para Mercado Libre AR.
 
-  - Patron de diseño MVVM
-  - Lenguaje Kotlin
+  - MVVM
+  - Kotlin
   - Unit test
-  - Corrutinas
+  - Coroutines
+  - Navigation Component
 
 # Dependecias utilizadas
 
